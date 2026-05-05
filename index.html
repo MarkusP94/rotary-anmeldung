@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>RC Rostock-Horizonte – Anmeldung Amazon Dummerstorf</title>
+<style>
+body { font-family: Arial; margin: 40px; }
+label { display: block; margin-top: 15px; }
+input, select { padding: 8px; width: 300px; }
+button { margin-top: 20px; padding: 10px 20px; }
+</style>
+</head>
+<body>
+
+<h2>Anmeldung – Amazon Logistikzentrum Dummerstorf (11.06.2026)</h2>
+
+<form name="anmeldung" method="POST" data-netlify="true">
+<label>Name:
+<input type="text" name="Name" required></label>
+
+<label>Schuhgröße:
+<input type="number" name="Schuhgröße" required></label>
+
+<label>Kleidergröße:
+<select name="Kleidergröße" required>
+<option value="">Bitte wählen</option>
+<option>XS</option><option>S</option><option>M</option>
+<option>L</option><option>XL</option><option>XXL</option>
+<option>XXXL</option>
+</select>
+</label>
+
+<button type="submit">Absenden</button>
+</form>
+
+</body>
+</html>
