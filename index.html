@@ -4,34 +4,129 @@
 <meta charset="UTF-8">
 <title>RC Rostock-Horizonte – Anmeldung Amazon Dummerstorf</title>
 <style>
-body { font-family: Arial; margin: 40px; }
-label { display: block; margin-top: 15px; }
-input, select { padding: 8px; width: 300px; }
-button { margin-top: 20px; padding: 10px 20px; }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5f7fa;
+        color: #333;
+    }
+
+    header {
+        background: #0C3C7C; /* Rotary Blue */
+        color: white;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #0C3C7C;
+        margin-top: 0;
+    }
+
+    label {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    input, select {
+        padding: 10px;
+        width: 100%;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 12px 20px;
+        background: #F7A81B; /* Rotary Gold */
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #0C3C7C;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #ffb938;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        color: #777;
+        font-size: 14px;
+    }
 </style>
 </head>
+
 <body>
 
-<h2>Anmeldung – Amazon Logistikzentrum Dummerstorf (11.06.2026)</h2>
+<header>
+    <img src="https://www.rotary.org/themes/custom/rotary_rotaryorg/images/rotary-logo.svg" alt="Rotary Logo">
+    <h1>Rotary Club Rostock-Horizonte</h1>
+</header>
 
-<form name="anmeldung" method="POST" data-netlify="true">
-<label>Name:
-<input type="text" name="Name" required></label>
+<div class="container">
+    <h2>Anmeldung – Amazon Logistikzentrum Dummerstorf<br>11. Juni 2026</h2>
 
-<label>Schuhgröße:
-<input type="number" name="Schuhgröße" required></label>
+    <p>Bitte tragt euren Namen, eure Schuhgröße und eure Kleidergröße ein.  
+    Die Angaben werden für die Sicherheitskleidung benötigt.</p>
 
-<label>Kleidergröße:
-<select name="Kleidergröße" required>
-<option value="">Bitte wählen</option>
-<option>XS</option><option>S</option><option>M</option>
-<option>L</option><option>XL</option><option>XXL</option>
-<option>XXXL</option>
-</select>
-</label>
+    <form name="anmeldung" method="POST" data-netlify="true">
+        <label>Name:
+            <input type="text" name="Name" required>
+        </label>
 
-<button type="submit">Absenden</button>
-</form>
+        <label>Schuhgröße:
+            <input type="number" name="Schuhgröße" required>
+        </label>
+
+        <label>Kleidergröße:
+            <select name="Kleidergröße" required>
+                <option value="">Bitte wählen</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>XXXL</option>
+            </select>
+        </label>
+
+        <button type="submit">Eintragen</button>
+    </form>
+</div>
+
+<footer>
+    © Rotary Club Rostock-Horizonte – 2026
+</footer>
 
 </body>
 </html>
